@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/bootstrap-icons/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-primary p-4 mb-5">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Food Recipes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#">Food List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Add Ingredients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Add Food</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">Add Food</div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-4">
+                <input type="text" class="form-control" placeholder="Food Name" id="foodName" />
+                <textarea class="form-control mt-4" name="foodRecipe" placeholder="Food Recipe" cols="30"
+                  rows="8"></textarea>
+              </div>
+              <div class="col-md-4">
+                <input type="text" class="form-control" placeholder="Ürün Ara" id="search" />
+                <ul class="list-group mt-4" id="productList">
+
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <h5 class="card-header"><strong>Food Name: </strong> <span id="foodTitle">Food Title</span></h5>
+                  <div class="card-body">
+                    <div class="content">
+                        <h5>Ingredients</h5>
+                        <ul class="ingredient-list" id="ingredientList">
+                          <li class="d-flex justify-content-between">
+                            <span>
+                              <i class="bi bi-trash delete-ingredient"></i>
+                              <label for="quantity-1">Domates</label>
+                            </span>
+                            <input type="text" name="quantity" id="quantity-1" class="float-end border-0 border-bottom border-black">
+                          </li>
+                      </ul>
+                    </div>
+                    <div class="recipe">
+                      <h6>Recipe:</h6>
+                      <p id="recipeContent"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 offset-md-8 mt-4">
+                <button class="btn btn-outline-success w-100">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <script src="assets/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="assets/js/addProduct.js"></script>
+</body>
+
+</html>
