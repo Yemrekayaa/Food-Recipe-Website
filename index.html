@@ -15,7 +15,7 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-primary p-4 mb-5">
       <div class="container-fluid">
-        <a class="navbar-brand text-white" href="#">Food Recipes</a>
+        <a class="navbar-brand text-white" href="#">Food List</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -47,50 +47,49 @@
     <main class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="card">
-            <div class="card-header">Malzeme Ürün Ekleme</div>
-            <div class="card-body">
-              <div class="row">
-                <div class="col-md-6">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Product Name"
-                    id="productName"
-                  />
-                </div>
-                <div class="col-md-6">
-                  <button class="btn btn-success w-100" id="btnAddProduct">
-                    Ekle
-                  </button>
+          <div class="alert alert-danger" role="alert">
+            <h4 class="mb-0">Food List</h4>
+            <div class="row" id="foodList">
+              <div class="col-md-6">
+                <div class="card ">
+                  <h5 class="card-header">
+                    <strong>Food Name:</strong><span>Domates Çorbasi</span>
+                  </h5>
+                  <div class="card-body">
+                    <div class="content">
+                      <h5>Ingredients</h5>
+                      <ul class="ingredient-list">
+                        <li class="d-flex justify-content-between">asdasd </li>
+                      </ul>
+                    </div>
+                    <div class="recipe">
+                        <h6>Recipe</h6>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                  </div>
+                  <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-danger col me-5">Delete</button>
+                    <button class="btn btn-success col">Done</button>
+                  </div>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>
+        
         <div class="col-md-6">
-          <div class="card">
-            <div class="card-header">Malzeme Ürün Ekleme</div>
-            <div class="card-body">
-              <div class="row">
-                <div class="col-md-12">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Ürün Ara"
-                    id="search"
-                  />
-                  <ul class="list-group mt-4" id="productList">
+          <div class="alert alert-success" role="alert">
+            <h4 class="mb-0">Completed Food List</h4>
+            <div class="row" id="completedList">
 
-                  </ul>
-                </div>
-              </div>
+            </div>
             </div>
           </div>
         </div>
       </div>
     </main>
     <script src="assets/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="assets/js/addProduct.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

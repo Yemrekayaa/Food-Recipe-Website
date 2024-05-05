@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     foodName: "",
     foodRecipe: "",
     ingredient: [],
+    isDone: false
   };
 
   let ingredient = [];
