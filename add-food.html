@@ -42,7 +42,7 @@
             <div class="row">
               <div class="col-md-4">
                 <input type="text" class="form-control" placeholder="Food Name" id="foodName" />
-                <textarea class="form-control mt-4" name="foodRecipe" placeholder="Food Recipe" cols="30"
+                <textarea class="form-control mt-4" name="foodRecipe" id="foodRecipe" placeholder="Food Recipe" cols="30"
                   rows="8"></textarea>
               </div>
               <div class="col-md-4">
@@ -62,7 +62,7 @@
                             <span>
                               <i class="bi bi-trash delete-ingredient"></i>
                               <label for="quantity-1">Domates</label>
-                            </span>
+                            </span >
                             <input type="text" name="quantity" id="quantity-1" class="float-end border-0 border-bottom border-black">
                           </li>
                       </ul>
@@ -75,7 +75,7 @@
                 </div>
               </div>
               <div class="col-md-4 offset-md-8 mt-4">
-                <button class="btn btn-outline-success w-100">Save</button>
+                <button class="btn btn-outline-success w-100" id="btnSave">Save</button>
               </div>
             </div>
           </div>
@@ -83,7 +83,7 @@
       </div>
   </main>
   <script src="assets/bootstrap/dist/js/bootstrap.bundle.js"></script>
-  <script src="assets/js/addProduct.js"></script>
+  <script src="assets/js/addFood.js"></script>
 </body>
 
 </html>
